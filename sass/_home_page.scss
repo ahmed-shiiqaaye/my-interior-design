@@ -1,6 +1,6 @@
 
 .navbar{
-    background:$primary;
+    background:rgba(34, 34, 34, 0.818);
     .container{
         .navbar-brand{
             height: 100px;
@@ -50,11 +50,15 @@
             height: 80vh;
             object-fit: cover;
             position: relative;
+            @media (max-width:540px) {
+                height: 65vh;
+            }
         }
         .carousel-caption{
             position: absolute;
             max-width: 700px;
-            // margin: 0 auto;
+            left: 5%;
+            padding: 0 20px;
             height: 100%;
             width: 100%;
             z-index: 1;
@@ -69,6 +73,11 @@
                 text-transform: capitalize;
                 font-family: "Montserrat",sans-serif;
                 margin-bottom: 40px;
+                @media (max-width:540px) {
+                    font-size: 30px;
+                    max-width: 500px;
+                }
+
             }
         }
     }
@@ -92,6 +101,9 @@
                 text-transform: capitalize;
                 // font-family:$ubunto;
                 font-weight: bold;
+                @media (max-width:768px) {
+                    font-size: 29px;
+                }
             }
             p.two{
                 opacity: .8;
@@ -164,4 +176,89 @@
             }
         }
     }    
+}
+
+.taps-side{
+    .container-fluid{
+        .col-lg-5{
+            max-height: 600px;
+        }
+        .row .col-lg-7{
+            p.one::after{
+                position: absolute;
+                left: -10px;
+                transform: translateY(-50%);
+                bottom: 50%;
+                content: '';
+                height: 2px;
+                width: 60px;
+                background:$hover;
+                display: inline-block;
+                border-radius: 2px;
+            }
+            p.one{
+                position: relative;
+                padding-left: 60px;
+                text-transform: uppercase;
+                font-size: 16px;
+                color: $hover;
+                font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            }
+            h2{
+                font-size: 36px;
+                text-transform: capitalize;
+                // font-family:$ubunto;
+                font-weight: bold;
+                @media (max-width:768px) {
+                    font-size: 29px;
+                }
+            }
+            p.two{
+                opacity: .8;
+                font-family: $ubunto;
+            }
+            // tab container
+            .tab-container{
+                .tab-btns{
+                    display: flex;
+                    .tab-btn{
+                        padding: 20px 25px;
+                        text-transform: capitalize;
+                        font-size: 15px;
+                        opacity: .9;
+                        background: rgba(0, 0, 0, 0.15);
+                        &:hover{
+                            background: rgba(0, 0, 0, 0.2);
+                        }
+                        cursor: pointer;
+                        &.active{
+                            background: #735d37;
+                            color: rgba(255, 255, 255, 0.9);
+                        }
+                    }
+                }
+                .tab-contents{
+                    .tab-content{
+                        display: none;
+                        padding: 30px;
+                        background: #735d37;
+                        font-size: 15px;
+                        color: rgba(255, 255, 255, 0.8);
+                        &.active{
+                            display: block;
+                        }
+                        p{
+                            margin-bottom: 20px;
+                        }
+                        ul{
+                            list-style-type:square;
+                            margin: 0;
+
+                        }
+
+                    }
+                }
+            }
+        }
+    }
 }
