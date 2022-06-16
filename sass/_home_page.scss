@@ -1,0 +1,167 @@
+
+.navbar{
+    background:$primary;
+    .container{
+        .navbar-brand{
+            height: 100px;
+            width: 190px;
+            position: relative;
+        }
+        .navbar-toggler{
+            i{
+                font-size: 28px;
+                cursor: pointer;
+                color: $hover;
+            }
+        }
+        .collapse ul{
+            justify-content: flex-end;
+            li{
+                padding: 6px;
+                a{
+                    color:$lightwhite;
+                    text-transform: capitalize;
+                    &:hover,
+                    &.active{
+                        color:$hover;
+                    }
+                }
+                ul{
+                    border-radius: 2px;
+                    li a{
+                        color:$primary;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.carousel{
+    .carousel-inner .carousel-item{
+        &::after{
+        content: '';
+        position: absolute;
+        top: 0;left: 0;
+        width: 100%;height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        }
+        img{
+            height: 80vh;
+            object-fit: cover;
+            position: relative;
+        }
+        .carousel-caption{
+            position: absolute;
+            max-width: 700px;
+            // margin: 0 auto;
+            height: 100%;
+            width: 100%;
+            z-index: 1;
+            justify-content: center;
+            text-align: left;
+            align-items: flex-start;
+            flex-direction: column;
+            h2{
+                font-size: 47px;
+                color: #f4f4f3;
+                font-weight: 800;
+                text-transform: capitalize;
+                font-family: "Montserrat",sans-serif;
+                margin-bottom: 40px;
+            }
+        }
+    }
+} 
+
+// "what-we-do
+
+.what-we-do{
+    background: rgba(34, 34, 34, 0.1);
+    .container{
+        .heading .cols{
+            width: 800px;
+            p.one{
+                text-transform: uppercase;
+                color: $hover;
+                font-size: 15px;
+                word-spacing: 1.3px;
+            }
+            h2{
+                font-size: 40px;
+                text-transform: capitalize;
+                // font-family:$ubunto;
+                font-weight: bold;
+            }
+            p.two{
+                opacity: .8;
+                font-family: montserrat;
+                color: rgb(37, 27, 27);
+            }
+        }
+        .grid{
+            // display: grid;
+            // grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+            // gap: 20px;
+            .card{
+                height: 380px;
+                border: 1px solid transparent;
+                border-radius: 0;
+                position: relative;
+                transition: $trisition;
+                padding: 10px;
+                background: rgba(34, 34, 34, 0.01);
+                &:hover{
+                    border: 1px solid $primary;
+                }
+                img{
+                    border-radius: 0;
+                    height: 330px;
+                }
+                .card-title{
+                    font-size: 19px;
+                    text-align: center;
+                    color: $primary;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+// bg-image
+.bg-image{
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),
+    url(https://media.istockphoto.com/photos/creative-composition-of-stylish-and-cozy-living-room-with-mock-up-picture-id1333177210?k=20&m=1333177210&s=612x612&w=0&h=mV8iGqDnxER9S5ZT3FAzk-6VcPwh_uVHfhP8UcGcLcA=);
+    .container{
+        .heder {
+            h2{
+                font-weight: bold;
+                color: rgba(255, 255, 255, 0.95);
+            }
+            p{
+                color: rgba(255, 255, 255, 0.5);
+            }
+            p.u::after{
+                position: absolute;
+                left: -10px;
+                transform: translateY(-50%);
+                bottom: 50%;
+                content: '';
+                height: 2px;
+                width: 60px;
+                background: rgba(255, 255, 255, 0.5);
+                display: inline-block;
+                border-radius: 2px;
+            }
+            p.u{
+                position: relative;
+                padding-left: 60px;
+                text-transform: uppercase;
+                font-size: 16px;
+                font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            }
+        }
+    }    
+}

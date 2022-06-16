@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.btn{
+    border: 1px solid rgba(0,0,0,.3);
+    border-radius: 2px;
+    text-transform: capitalize;
+    font-family: 'fira sans',sans-serif;
+}
+body{
+    font-family: Lato;
+}
+
+$primary:#222222;
+$hover:rgba(207, 144, 27, 0.838);
+$lightwhite:#d2d1d1;
+$trisition:all .15s ease-in-out;
+$ubunto:"Ubunto",sans-serif;
+
+
+//botstrap
+$carousel-control-color: $hover;
+$navbar-toggler-icons:$hover;
+$carousel-indicator-active-bg: $hover;
+
+
+
+.inner-btns{
+    display: flex;
+    gap: 10px;
+}
+.btn-fill{
+    background: $hover;
+    color: white;
+    border: 1px solid $hover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .svg{
+        transform: rotate(180deg);
+        margin-left: 10px;
+        transition: $trisition;
+    }
+    &:hover{
+        .svg{
+            margin-left: 13px;
+        }
+    }
+}
+.hero-btn{
+    font-size: 16px;
+    padding: 12px 16px;
+    border: 2px solid $hover;
+    border-radius: 2px;
+    outline: 0;
+    background: transparent;
+    color: white;
+    background: $hover;
+    transition:$trisition;
+    cursor: pointer;
+    &:hover{
+        opacity: .97;
+        border-color: white;
+    }
+}
+.hero-btn-outline{
+    background: transparent;
+    &:hover{
+        opacity: 1;
+    }
+}
+
+.sliderbtn{
+    position: absolute;
+    top: 65%;
+    z-index: 88;
+    cursor: pointer;
+    background:white;
+    color: $primary;
+    opacity: .7;
+    transition: $trisition;
+    &:hover{
+        opacity: 1;
+    }
+}
+.nextBtn{
+    right: 0;
+}
+.prevBtn{
+    left: 0;
+    transform: rotate(180deg);
+}
+.sliders{
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    .wrappers{
+        flex: 0 0 auto;
+        width: 400px;
+        height: 450px;
+        position: relative;
+        @media (max-width:768px) {
+            width: 350px;
+        }
+        .details{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+        }
+        .name{
+            background: rgba(6, 3, 1,.4);
+            width: 100%;
+            font-size: 22px;
+            color:rgba(254, 253, 252, 0.8);
+            text-align: center;
+            bottom: 0;
+            text-transform: capitalize;
+            font-weight: 700;
+        }
+        .no{
+            top: 0;
+            color: rgba(254, 253, 252, 0.8);
+            background: rgba(0,0,0,.3);
+            font-weight: 800;
+        }
+    }
+    &::-webkit-scrollbar{
+        display: none;
+    }
+}
