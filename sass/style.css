@@ -190,42 +190,42 @@ body {
   background: rgba(34, 34, 34, 0.818);
 }
 
-.navbar .container .navbar-brand {
+.navbar .container-fluid .navbar-brand {
   height: 100px;
   width: 190px;
   position: relative;
 }
 
-.navbar .container .navbar-toggler i {
+.navbar .container-fluid .navbar-toggler i {
   font-size: 28px;
   cursor: pointer;
   color: rgba(207, 144, 27, 0.838);
 }
 
-.navbar .container .collapse ul {
+.navbar .container-fluid .collapse ul.navbar-nav {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
 
-.navbar .container .collapse ul li {
+.navbar .container-fluid .collapse ul.navbar-nav li {
   padding: 6px;
 }
 
-.navbar .container .collapse ul li a {
+.navbar .container-fluid .collapse ul.navbar-nav li a {
   color: #d2d1d1;
   text-transform: capitalize;
 }
 
-.navbar .container .collapse ul li a:hover, .navbar .container .collapse ul li a.active {
+.navbar .container-fluid .collapse ul.navbar-nav li a:hover, .navbar .container-fluid .collapse ul.navbar-nav li a.active {
   color: rgba(207, 144, 27, 0.838);
 }
 
-.navbar .container .collapse ul li ul {
+.navbar .container-fluid .collapse ul.navbar-nav li ul {
   border-radius: 2px;
 }
 
-.navbar .container .collapse ul li ul li a {
+.navbar .container-fluid .collapse ul.navbar-nav li ul li a {
   color: #222222;
 }
 
@@ -661,7 +661,6 @@ body {
   padding: 0;
   line-height: 1.2;
   font-family: lato;
-  font-weight: 600;
   opacity: .95;
   font-size: 24px;
   text-transform: capitalize;
@@ -815,7 +814,6 @@ body {
   font-family: sans-serif;
   margin-bottom: 20px;
   padding-bottom: 10px;
-  border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
 }
 
 .footer .container-fluid .col-md-3 ul {
@@ -850,6 +848,7 @@ body {
 .footer .container {
   font-size: 18px;
   line-height: 1.5;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .footer .container h4 {
@@ -869,5 +868,150 @@ body {
   width: 40px;
   height: 2px;
   background: rgba(255, 255, 255, 0.4);
+}
+
+.Testimonials {
+  position: relative;
+}
+
+.Testimonials .container {
+  max-width: 100%;
+  text-align: center;
+}
+
+.Testimonials .container .row .col-6 {
+  width: 100%;
+}
+
+.Testimonials .container .row .col-6 p {
+  font-family: pt sans;
+}
+
+.Testimonials .container .row .col-6 h2 {
+  font-family: pt sans;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 24px;
+  line-height: 1.4;
+  margin-bottom: 0;
+}
+
+.Testimonials .container .row .col-6 .job {
+  font-size: 15px;
+}
+
+.Testimonials .container .row .col-6 .face {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 10px rgba(24, 0, 0, 0.3);
+          box-shadow: 0 0 10px rgba(24, 0, 0, 0.3);
+}
+
+.Testimonials .container .wrappers {
+  margin-right: 30px;
+  height: auto;
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .Testimonials .container .wrappers {
+    width: 100%;
+  }
+}
+
+.before-showcase {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(34, 34, 34, 0.6)), to(rgba(34, 34, 34, 0.6))), url(/img/before.jpg) no-repeat center center/cover;
+  background: linear-gradient(rgba(34, 34, 34, 0.6), rgba(34, 34, 34, 0.6)), url(/img/before.jpg) no-repeat center center/cover;
+}
+
+.interior-showcase {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(34, 34, 34, 0.6)), to(rgba(34, 34, 34, 0.6))), url(/img/interior.jpg) no-repeat center center/cover;
+  background: linear-gradient(rgba(34, 34, 34, 0.6), rgba(34, 34, 34, 0.6)), url(/img/interior.jpg) no-repeat center center/cover;
+}
+
+.interior-grid {
+  background: rgba(0, 0, 0, 0);
+}
+
+.interior-grid .container .row .head p {
+  color: rgba(207, 144, 27, 0.838);
+}
+
+.interior-grid .container .row .head h2 {
+  color: #222222;
+}
+
+.interior-grid .container-fluid .row .col-lg-6 h3 {
+  font-weight: 600;
+  font-family: montserrat;
+  text-transform: uppercase;
+  font-size: 27px;
+  margin-bottom: 20px;
+}
+
+.interior-grid .container-fluid .row .col-lg-6 img {
+  height: 500px;
+  margin-bottom: 30px;
+}
+
+.interior-grid .container-fluid .row .col-lg-6 p {
+  color: #222222;
+  opacity: .8;
+}
+
+.services-showcase {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(34, 34, 34, 0.6)), to(rgba(34, 34, 34, 0.6))), url(/img/services.jpg) no-repeat center center/cover;
+  background: linear-gradient(rgba(34, 34, 34, 0.6), rgba(34, 34, 34, 0.6)), url(/img/services.jpg) no-repeat center center/cover;
+}
+
+.services-grid {
+  background: white;
+}
+
+.services-grid .container .row .head p {
+  color: rgba(207, 144, 27, 0.838);
+}
+
+.services-grid .container .row .head h2 {
+  color: #222222;
+}
+
+.services-grid .container .col-lg-6 {
+  text-align: center;
+}
+
+.services-grid .container .col-lg-6 img {
+  height: 400px;
+}
+
+.services-grid .container .col-lg-6 h2 {
+  font-size: 24px;
+  font-family: poppins;
+  line-height: 1.4;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.services-grid .container .col-lg-6 p {
+  opacity: .85;
+}
+
+.renovation .container .title {
+  text-transform: uppercase;
+  margin: 20px 0;
+  font-weight: 600;
+}
+
+.renovation .container .row .col-lg-6 h3 {
+  font-weight: bold;
+  font-size: 23px;
+  text-transform: capitalize;
+}
+
+.renovation .container .row .col-lg-6 p {
+  font-size: 18px;
 }
 /*# sourceMappingURL=style.css.map */

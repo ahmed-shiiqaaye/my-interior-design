@@ -1,7 +1,7 @@
 
 .navbar{
     background:rgba(34, 34, 34, 0.818);
-    .container{
+    .container-fluid{
         .navbar-brand{
             height: 100px;
             width: 190px;
@@ -14,7 +14,7 @@
                 color: $hover;
             }
         }
-        .collapse ul{
+        .collapse ul.navbar-nav{
             justify-content: flex-end;
             li{
                 padding: 6px;

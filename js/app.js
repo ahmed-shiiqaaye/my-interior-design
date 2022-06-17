@@ -3,13 +3,13 @@ let nextbtn = document.querySelectorAll('.nextBtn');
 let prevBtn = document.querySelectorAll('.prevBtn');
 let wrapperCard =document.querySelector('.wrappers')
 
-SliderContainer.forEach((conttainer,i,wrapperCard)=>{
+SliderContainer.forEach((conttainer,i)=>{
     let conttainerWith = conttainer.getBoundingClientRect().width;
     nextbtn[i].addEventListener('click',()=>{
-        conttainer.scrollLeft += 400
+        conttainer.scrollLeft += conttainerWith
     })
     prevBtn[i].addEventListener('click',()=>{
-        conttainer.scrollLeft -= 400
+        conttainer.scrollLeft -= conttainerWith
     })
 })
 

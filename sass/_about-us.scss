@@ -153,7 +153,7 @@
                         padding: 0;
                         line-height: 1.2;
                         font-family: lato;
-                        font-weight: 600;
+                        // font-weight: 600;
                         opacity: .95;
                         font-size: 24px;
                         text-transform: capitalize;
@@ -288,7 +288,6 @@
                 font-family: sans-serif;
                 margin-bottom: 20px;
                 padding-bottom: 10px;
-                border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
             }
             ul{
                 margin: 0;
@@ -314,6 +313,7 @@
     .container{
         font-size: 18px;
         line-height: 1.5;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
         h4{
             color: rgba(255, 255, 255, 0.9);
             font-family: sans-serif;
@@ -329,6 +329,43 @@
             width: 40px;
             height: 2px;
             background: rgba(255, 255, 255, 0.4);
+        }
+    }
+}
+.Testimonials{
+    position: relative;
+    .container{
+        max-width: 100%;
+        text-align: center;
+        .row .col-6{
+            width: 100%;
+            p{
+                font-family: pt sans;
+            }
+            h2{
+                font-family: pt sans;
+                font-weight: bold;
+                text-transform: capitalize;
+                font-size: 24px;
+                line-height: 1.4;margin-bottom: 0;
+            }
+            .job{
+                font-size: 15px;
+            }
+            .face{
+                width: 120px;
+                height: 120px;
+                border-radius: 50%;
+                box-shadow: 0 0 10px rgba(24, 0, 0, 0.3);
+            }
+        }
+        .wrappers{
+            margin-right: 30px;
+            height: auto;
+            width: 50%;
+            @media (max-width:768px) {
+                width: 100%;
+            }
         }
     }
 }

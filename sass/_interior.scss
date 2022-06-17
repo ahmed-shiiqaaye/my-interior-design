@@ -1,0 +1,96 @@
+.interior-showcase{
+    background: linear-gradient(rgba(34, 34, 34, 0.6),rgba(34, 34, 34, 0.6)),
+    url(/img/interior.jpg)
+    no-repeat center center/cover;
+}
+
+.interior-grid{
+    background: rgba(0, 0, 0, .0);
+    .container{
+        .row .head {
+            p{
+                color: $hover;
+            }
+            h2{
+                color: $primary;
+            }
+        }
+    }
+    .container-fluid{
+        .row .col-lg-6 {
+            h3{
+                font-weight: 600;
+                font-family: montserrat;
+                text-transform: uppercase;
+                font-size: 27px;
+                margin-bottom: 20px;
+            }
+            img{
+                height: 500px;
+                margin-bottom: 30px;
+            }
+            p{
+                color: $primary;
+                opacity: .8;
+            }    
+        }
+    }
+}
+
+
+.services-showcase{
+    background: linear-gradient(rgba(34, 34, 34, 0.6),rgba(34, 34, 34, 0.6)),
+    url(/img/services.jpg)
+    no-repeat center center/cover;
+}
+.services-grid{
+    background: white;
+    .container{
+        .row .head {
+            p{
+                color: $hover;
+            }
+            h2{
+                color: $primary;
+            }
+        }
+        .col-lg-6{
+            text-align: center;
+            img{
+                height: 400px;
+            }
+            h2{
+                font-size: 24px;
+                font-family: poppins;
+                line-height: 1.4;
+                margin-bottom: 5px;
+                text-transform: capitalize;
+                margin-top: 15px;
+                font-weight: bold;
+            }
+            p{
+                opacity: .85;
+            }
+        }
+    }
+}
+
+.renovation{
+    .container{
+        .title{
+            text-transform: uppercase;
+            margin: 20px 0;
+            font-weight: 600;
+        }
+        .row .col-lg-6{
+            h3{
+                font-weight: bold;
+                font-size: 23px;
+                text-transform: capitalize;
+            }
+            p{
+                font-size: 18px;
+            }
+        }
+    }
+}
