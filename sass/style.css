@@ -322,6 +322,12 @@ body {
   color: #251b1b;
 }
 
+@media (max-width: 768px) {
+  .what-we-do .container .heading .cols p.two {
+    font-size: 14px;
+  }
+}
+
 .what-we-do .container .grid .card {
   height: 380px;
   border: 1px solid transparent;
@@ -342,11 +348,18 @@ body {
   height: 330px;
 }
 
-.what-we-do .container .grid .card .card-title {
-  font-size: 19px;
+.what-we-do .container .grid .card .card-body {
   text-align: center;
+  height: 50px;
+  padding: 0;
+  padding-top: 15px;
+}
+
+.what-we-do .container .grid .card .card-body h3 {
   color: #222222;
   font-weight: bold;
+  line-height: 1.4;
+  font-size: 17px;
 }
 
 .bg-image {
@@ -384,6 +397,15 @@ body {
   text-transform: uppercase;
   font-size: 16px;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+@media (max-width: 768px) {
+  .bg-image .container h2 {
+    font-size: 20px;
+  }
+  .bg-image .container p {
+    font-size: 13px;
+  }
 }
 
 .taps-side .container-fluid .col-lg-5 {
@@ -475,6 +497,12 @@ body {
   margin: 0;
 }
 
+@media (max-width: 768px) {
+  .taps-side .container-fluid .row .col-lg-7 p, .taps-side .container-fluid .row .col-lg-7 p.one {
+    font-size: 14px;
+  }
+}
+
 .showcase-about {
   height: 80vh;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(34, 34, 34, 0.6)), to(rgba(34, 34, 34, 0.6))), url(/img/about.jpg) no-repeat center center/cover;
@@ -557,6 +585,15 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .showcase-about .container .inner-text h2 {
+    font-size: 35px;
+  }
+  .showcase-about .container .inner-text p {
+    font-size: 15px;
+  }
+}
+
 * {
   overflow-x: hidden;
 }
@@ -591,6 +628,16 @@ body {
   opacity: .7;
   font-family: fira sans;
   line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .design-grid .container-fluid .row .col-md-4 h2 {
+    font-size: 30px;
+    padding: 10px 0;
+  }
+  .design-grid .container-fluid .row .col-md-4 p {
+    font-size: 14px;
+  }
 }
 
 .bg-purple {
@@ -633,7 +680,7 @@ body {
 
 @media (max-width: 991px) {
   .bg-purple .container .row .col h2 {
-    font-size: 44px;
+    font-size: 30px;
   }
 }
 
@@ -671,6 +718,15 @@ body {
   text-transform: uppercase;
   font-size: 12px;
   opacity: .7;
+}
+
+@media (max-width: 768px) {
+  .bg-purple .container .row .card .detail h3 {
+    font-size: 20px;
+  }
+  .bg-purple .container .row .card .detail p {
+    font-size: 10px;
+  }
 }
 
 .counting {
@@ -729,7 +785,7 @@ body {
 
 @media (max-width: 991px) {
   .counting .container .row .heading h2 {
-    font-size: 44px;
+    font-size: 30px;
   }
 }
 
@@ -802,6 +858,15 @@ body {
   background: #6e4a0c9e;
 }
 
+@media (max-width: 768px) {
+  .grid-images .container .row .head h2 {
+    font-size: 24px;
+  }
+  .grid-images .container .row .head p {
+    font-size: 13px;
+  }
+}
+
 .footer {
   background: #222222;
   color: rgba(255, 255, 255, 0.4);
@@ -839,6 +904,21 @@ body {
   font-size: 13px;
   margin-right: 7px;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer .container-fluid .col-md-3 ul li a {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 768px) {
+  .footer .container-fluid .col-md-3 h3 {
+    font-size: 19px;
+  }
+  .footer .container-fluid .col-md-3 p,
+  .footer .container-fluid .col-md-3 ul li,
+  .footer .container-fluid .col-md-3 ul li i {
+    font-size: 12px;
+  }
 }
 
 .footer .container-fluid .last ul {
@@ -900,12 +980,28 @@ body {
   font-size: 15px;
 }
 
+@media (max-width: 768px) {
+  .Testimonials .container .row .col-6 p, .Testimonials .container .row .col-6 .job {
+    font-size: 12px;
+  }
+  .Testimonials .container .row .col-6 h2 {
+    font-size: 18px;
+  }
+}
+
 .Testimonials .container .row .col-6 .face {
   width: 120px;
   height: 120px;
   border-radius: 50%;
   -webkit-box-shadow: 0 0 10px rgba(24, 0, 0, 0.3);
           box-shadow: 0 0 10px rgba(24, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .Testimonials .container .row .col-6 .face {
+    height: 60px;
+    width: 60px;
+  }
 }
 
 .Testimonials .container .wrappers {
@@ -958,6 +1054,15 @@ body {
 .interior-grid .container-fluid .row .col-lg-6 p {
   color: #222222;
   opacity: .8;
+}
+
+@media (max-width: 768px) {
+  .interior-grid .container-fluid .row .col-lg-6 h3 {
+    font-size: 23px;
+  }
+  .interior-grid .container-fluid .row .col-lg-6 p {
+    font-size: 14px;
+  }
 }
 
 .services-showcase {
@@ -1013,5 +1118,225 @@ body {
 
 .renovation .container .row .col-lg-6 p {
   font-size: 18px;
+}
+
+.contact-showcase {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(34, 34, 34, 0.6)), to(rgba(34, 34, 34, 0.6))), url(https://media.istockphoto.com/photos/hand-of-businessman-holding-mobile-smartphone-with-icon-customer-picture-id1308052781?k=20&m=1308052781&s=612x612&w=0&h=VOp9ADhKO1ShoKWXehRaI2rl2ayOEOpE3n3fwyX_vGc=) no-repeat center center/cover;
+  background: linear-gradient(rgba(34, 34, 34, 0.6), rgba(34, 34, 34, 0.6)), url(https://media.istockphoto.com/photos/hand-of-businessman-holding-mobile-smartphone-with-icon-customer-picture-id1308052781?k=20&m=1308052781&s=612x612&w=0&h=VOp9ADhKO1ShoKWXehRaI2rl2ayOEOpE3n3fwyX_vGc=) no-repeat center center/cover;
+  height: 60vh;
+}
+
+.my-cards {
+  background: rgba(34, 34, 34, 0.04);
+}
+
+.my-cards .container .row .col-md-4 .card {
+  text-align: center;
+  padding: 20px 40px;
+  height: 230px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.my-cards .container .row .col-md-4 .card svg {
+  height: 35px;
+  width: 35px;
+  margin-bottom: 15px;
+  color: rgba(207, 144, 27, 0.838);
+}
+
+.my-cards .container .row .col-md-4 .card h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.my-cards .container .row .col-md-4 .card p {
+  font-family: fira sans;
+  opacity: .7;
+}
+
+.form-section .container .row .col-lg-6 .head p {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 15px;
+  color: rgba(207, 144, 27, 0.838);
+}
+
+.form-section .container .row .col-lg-6 .head h3 {
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-family: "Ubunto", sans-serif;
+}
+
+.form-section .container .row .col-lg-6 form {
+  -webkit-box-shadow: 0 0 10px rgba(34, 34, 34, 0.15);
+          box-shadow: 0 0 10px rgba(34, 34, 34, 0.15);
+}
+
+.form-section .container .row .col-lg-6 input {
+  border: 1px solid transparent;
+  background: rgba(34, 34, 34, 0.07);
+  outline: none;
+  padding: 14px;
+}
+
+.form-section .container .row .col-lg-6 textarea {
+  border: 1px solid transparent;
+  background: rgba(34, 34, 34, 0.07);
+  border-radius: 4px;
+  outline: none;
+  padding: 15px;
+}
+
+.form-section .container .row .col-lg-6 .accordion .accordion-item {
+  border-radius: 4px;
+  border: 0;
+}
+
+.form-section .container .row .col-lg-6 .accordion .accordion-item .accordion-collapse {
+  background: rgba(207, 144, 27, 0.838);
+}
+
+.form-section .container .row .col-lg-6 .accordion .accordion-item .accordion-header button {
+  background: rgba(34, 34, 34, 0.07);
+}
+
+.form-section .container .row .col-lg-6 .accordion .accordion-button {
+  border: 0;
+  border-radius: 0;
+}
+
+.form-section .container .row *::-webkit-input-placeholder {
+  font-family: fira sans;
+}
+
+.form-section .container .row *:-ms-input-placeholder {
+  font-family: fira sans;
+}
+
+.form-section .container .row *::-ms-input-placeholder {
+  font-family: fira sans;
+}
+
+.form-section .container .row *::placeholder {
+  font-family: fira sans;
+}
+
+.portfolio-grid .container .filter-btns {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.portfolio-grid .container .filter-btns .filter-btn {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  padding: 12px 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: .5px;
+  color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  background: white;
+}
+
+.portfolio-grid .container .filter-btns .filter-btn.active {
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+
+@media (max-width: 991px) {
+  .portfolio-grid .container .filter-btns .filter-btn {
+    padding: 8px 16px;
+  }
+}
+
+.portfolio-grid .container .my-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  overflow: hidden;
+}
+
+.portfolio-grid .container .my-grid .card {
+  border: 0;
+  border-radius: 0;
+  background: rgba(0, 0, 200, 0.03);
+  overflow: hidden;
+  height: 350px;
+  cursor: pointer;
+}
+
+.portfolio-grid .container .my-grid .card img {
+  width: 100%;
+  height: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.portfolio-grid .container .my-grid .card .image-name {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.6);
+  padding: 10px 0;
+  text-align: center;
+  height: 50px;
+  text-transform: capitalize;
+}
+
+.portfolio-grid .container .my-grid .card.hide {
+  display: none;
+}
+
+.portfolio-grid .container .my-grid .card.show {
+  display: block;
+  -webkit-animation: zoom .3s ease-in-out;
+          animation: zoom .3s ease-in-out;
+}
+
+@-webkit-keyframes zoom {
+  0% {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes zoom {
+  0% {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.project-showcase {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(34, 34, 34, 0.6)), to(rgba(34, 34, 34, 0.6))), url(/img/projects.jpg) no-repeat center center/cover;
+  background: linear-gradient(rgba(34, 34, 34, 0.6), rgba(34, 34, 34, 0.6)), url(/img/projects.jpg) no-repeat center center/cover;
+  height: 60vh;
 }
 /*# sourceMappingURL=style.css.map */

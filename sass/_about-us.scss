@@ -54,6 +54,14 @@
                     font-size: 16px;                    
                 }
             }
+            @media (max-width:768px) {
+                h2{
+                    font-size: 35px;
+                }
+                p{
+                    font-size: 15px;
+                }
+            }
         }
     }
 }
@@ -89,6 +97,15 @@
                 opacity: .7;
                 font-family: fira sans;
                 line-height: 1.6;
+            }
+            @media (max-width:768px) {
+                h2{
+                    font-size: 30px;
+                    padding: 10px 0;
+                }
+                p{
+                    font-size: 14px;
+                }
             }
         }
     }
@@ -129,7 +146,7 @@
                     opacity: .5;
                 }
                 @media (max-width:991px) {
-                    font-size: 44px;                    
+                    font-size: 30px;                    
                 }
             }
         }
@@ -163,6 +180,14 @@
                         text-transform: uppercase;
                         font-size: 12px;
                         opacity: .7;
+                    }
+                    @media (max-width:768px) {
+                        h3{
+                            font-size: 20px;
+                        }
+                        p{
+                            font-size: 10px;
+                        }
                     }
                 }
             }
@@ -214,7 +239,7 @@
                     opacity: .5;
                 }
                 @media (max-width:991px) {
-                    font-size: 44px;                    
+                    font-size: 30px;                    
                 }
             }
         }
@@ -273,6 +298,14 @@
                 background: #6e4a0c9e;
             }
         }
+        @media (max-width:768px) {
+            h2{
+                font-size: 24px;
+            }
+            p{
+                font-size: 13px;
+            }
+        }
     }
 }
 
@@ -303,6 +336,19 @@
                         margin-right: 7px;
                         color: rgba(255, 255, 255, 0.6);
                     }
+                    a{
+                        color: rgba(255, 255, 255, 0.6);
+                    }
+                }
+            }
+            @media (max-width:768px) {
+                h3{
+                    font-size: 19px;
+                }
+                p,
+                ul li,
+                ul li i{
+                    font-size: 12px;
                 }
             }
         }
@@ -352,11 +398,23 @@
             .job{
                 font-size: 15px;
             }
+            @media (max-width:768px) {
+                p,.job{
+                    font-size: 12px;
+                }
+                h2{
+                    font-size: 18px;
+                }
+            }
             .face{
                 width: 120px;
                 height: 120px;
                 border-radius: 50%;
                 box-shadow: 0 0 10px rgba(24, 0, 0, 0.3);
+                @media (max-width:768px) {
+                    height: 60px;
+                    width: 60px;
+                }
             }
         }
         .wrappers{

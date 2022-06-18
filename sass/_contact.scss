@@ -1,0 +1,179 @@
+
+.contact-showcase{
+    background: linear-gradient(rgba(34, 34, 34, 0.6),rgba(34, 34, 34, 0.6)),
+    url(https://media.istockphoto.com/photos/hand-of-businessman-holding-mobile-smartphone-with-icon-customer-picture-id1308052781?k=20&m=1308052781&s=612x612&w=0&h=VOp9ADhKO1ShoKWXehRaI2rl2ayOEOpE3n3fwyX_vGc=) no-repeat center center/cover;
+    height: 60vh;
+}
+
+.my-cards{
+    background: rgba(34, 34, 34, 0.04);
+    .container .row{
+        .col-md-4{
+            .card{
+                text-align: center;
+                padding: 20px 40px;
+                height: 230px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                // flex-direction: column;
+                svg{
+                    // margin-left: 50%;
+                    // transform: translateX(-50%);
+                    height: 35px;
+                    width: 35px;
+                    margin-bottom: 15px;
+                    color: $hover;
+                }
+                h3{
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+                p{
+                    font-family: fira sans;
+                    opacity: .7;
+                }
+            }
+        }
+    }
+}
+
+.form-section{
+    .container{
+        .row {
+            .col-lg-6{
+                .head{
+                    p{
+                        margin-bottom: 10px;
+                        text-transform: uppercase;
+                        font-size: 15px;
+                        color: $hover;
+                    }
+                    h3{
+                        font-size: 30px;
+                        font-weight: bold;
+                        text-transform: capitalize;
+                        font-family:$ubunto;
+                    }
+                }
+                form{
+                    box-shadow: 0 0 10px rgba(34, 34, 34, 0.15);
+                }
+                input{
+                    // height: 45px;
+                    border: 1px solid transparent;
+                    background: rgba(34, 34, 34, 0.07);
+                    outline: none;
+                    padding: 14px;
+                }
+                textarea{
+                    border: 1px solid transparent;
+                    background: rgba(34, 34, 34, 0.07);
+                    border-radius: 4px;
+                    outline: none;
+                    padding: 15px;
+                }
+               .accordion{
+                .accordion-item{
+                    border-radius: 4px;
+                    border: 0;
+                    .accordion-collapse{
+                        background: $hover;
+
+                    }
+                    .accordion-header button{
+                        background:rgba(34, 34, 34, 0.07);
+                    }
+                }
+                
+                .accordion-button{
+                    border: 0;
+                    border-radius: 0;
+                }
+               }
+            }
+            *::placeholder{
+                font-family: fira sans;
+            }
+        }
+    }
+}
+
+// Portfolio images / Gallery file
+.portfolio-grid .container {
+    .filter-btns {
+      flex-wrap: wrap;
+      .filter-btn {
+          border: 1px solid rgba(0, 0, 0, 0.4);
+        padding: 12px 26px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // border-radius: 24px;
+        text-transform: uppercase;
+        font-size: 14px;
+        letter-spacing: .5px;
+        color: rgba(0, 0, 0, 0.6);
+        cursor: pointer;
+        background: white;
+        &.active {
+          background: rgba(0, 0, 0, 0.6);
+          color: white;
+        }
+      }
+      @media (max-width:991px) {
+          .filter-btn{
+              padding: 8px 16px;
+          }
+      }
+    }
+    .my-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      overflow: hidden;
+      .card {
+        border: 0;
+        border-radius: 0;
+        background: rgba(0, 0, 200, 0.03);
+        overflow: hidden;
+        height: 350px;
+        cursor: pointer;
+        img{
+          width: 100%;
+          height: 100%;
+          height: 300px;
+          object-fit: cover;
+        }
+        .image-name {
+          font-family: "Ubuntu", sans-serif;
+          font-weight: normal;
+          color: rgba(0, 0, 0, 0.6);
+          padding: 10px 0;
+          text-align: center;
+          height: 50px;
+          text-transform: capitalize;
+  
+        }
+      }
+      .card.hide{
+          display: none;
+      }
+      .card.show{
+          display: block;
+          animation: zoom .3s ease-in-out;
+      }
+      @keyframes zoom {
+          0%{ transform: scale(.7);}
+          100%{ transform:scale(1);}
+      }
+    }
+  }
+
+
+  
+.project-showcase{
+    background: linear-gradient(rgba(34, 34, 34, 0.6),rgba(34, 34, 34, 0.6)),
+    url(/img/projects.jpg) no-repeat center center/cover;
+    height: 60vh;
+}
