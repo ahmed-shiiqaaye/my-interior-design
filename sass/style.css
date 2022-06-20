@@ -280,6 +280,7 @@ body {
   text-transform: capitalize;
   font-family: "Montserrat",sans-serif;
   margin-bottom: 40px;
+  line-height: 1.6;
 }
 
 @media (max-width: 540px) {
